@@ -11,6 +11,7 @@
 }
 .logo img {
     border: 0;
+    height: 20px;
 }
 header{
 	width: 100%;
@@ -93,6 +94,7 @@ header{
 .cv-photo{
     max-width: 100%;
     border-radius: 50%;
+    width: 300px;
 }
 .cv-skills{
     padding-bottom: 30px;

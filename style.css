@@ -1,1 +1,250 @@
-#содержание1
+.cv{
+    font-family: 'Joan', serif;
+}
+
+@font-face{
+    font-family: Joan;
+    src: url("assets/fonts/Joan-Regular.ttf");
+}
+*{
+    box-sizing: border-box;
+}
+.logo img {
+    border: 0;
+    height: 20px;
+}
+header{
+	width: 100%;
+	height: 70px;
+}
+.nav {
+    background-color: #351672;
+    overflow: hidden;
+    position: sticky;
+    top: 0; 
+    z-index: 999
+}
+.nav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    font-size: 15px;
+    text-decoration: none;
+}
+.nav a:hover {
+    background-color: #351672;
+    color: #080303;
+}
+.nav-link {
+    background-color: #351672;
+    color: #f2f2f2;
+}
+.nav-list{
+    list-style: none;
+}
+
+
+
+/* .footer */
+
+.footer{
+    padding:28px 0 5px 0;
+	text-align: center;
+	background-color: #351672;
+	color: #351672;
+	margin-left: 0px;
+	margin-right: 0px;
+	min-width: 300px;
+}
+.footer a{
+    color:black;
+    text-decoration: none;
+}
+.footer a:hover{
+    color: black;
+	text-decoration: none;
+}
+.footer-img{
+    width: 100px;
+}
+.footer-item{
+    display: flex;
+    list-style: none;
+    color: white;
+    flex: 1;
+    align-items: center;
+    justify-content: space-around;
+}
+/* .footer */
+
+
+.cv-photoname{
+    padding: 30px;
+}
+.cv-h1{
+    margin: 10px 0;
+    font-size: 2.5em;
+    color: black;
+}
+.cv-figure{
+    margin: 0;
+}
+.cv-photo{
+    max-width: 100%;
+    border-radius: 50%;
+    width: 300px;
+}
+.cv-skills{
+    padding-bottom: 30px;
+}
+
+
+.contacts-list{
+    list-style: none;
+    padding: 0;
+}
+.contacts-item{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.contacts-item img{
+    width: 40px;
+    margin-right: 10px;
+}
+.contacts-link-img{
+    border: none;
+}
+
+.cv-skills-list{
+    color: #1a181b;
+    list-style: none;
+    padding-left: 15px;
+}
+.cv-skills-item{
+    position: relative;
+    margin-bottom: 7px;
+}
+.cv-skills-item::before{
+    content: "";
+    position: absolute;
+    left: -15px;
+    top: calc(50% - 3px);
+    display: block;
+    height: 6px;
+    width: 6px;
+    background-color: #1a181b;
+    border-radius: 100%;
+}
+.block-right .cv-h2{
+    color: #250c0c;
+    position: relative;
+    padding-left: 40px;
+    border-bottom: 1px solid #250c0c;
+}
+.block-right .cv-h2 img{
+    position: absolute;
+    left: 0;
+    width: 30px;
+}
+
+.block-right .cv-h4 {
+    display: table-cell;
+    padding: 5px 0;
+}
+
+.block-right .cv-figcaption {
+    display: block;
+    background-color: #080303;
+    color: #f2f2f2;
+    text-align: center;
+}
+.block-right .cv-project-img {
+    display: flex;
+    flex-flow: column;
+    max-width: 100%;
+    filter: blur(5px);
+}
+
+.block-right .cv-sec.cv-english{
+    padding-bottom: 30px;
+}
+.cv-codeblock{
+    color: #080303;
+    white-space: pre-wrap;
+}
+
+.cv-codeblock code{
+    font-family: Lucida Console,Liberation Mono,DejaVu Sans Mono,Bitstream Vera Sans Mono,Courier New;
+}
+.cv-color3 a{
+    color: #864e44;
+}
+.cv-color3 a:hover{
+    font-weight: bold;
+    color: #251613;
+}
+.cv-table-td{
+    padding: 10px 8px;
+}
+.cv-table-td:last-child{
+    padding-bottom: 0;
+}
+.cv-table-td-main {
+    text-align: center;
+}
+
+@media screen and (min-width: 768px){
+        .cv-main{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .block-left{
+        width: 40%;
+    }
+    .block-right{
+        width: calc(60% - 60px);
+    } 
+    .cv-footer{
+        display: flex;
+        align-items: center;
+    }
+    .cv-footer-item{
+        width: 33.33%;
+    }
+    .cv-codeblock {
+        font-size: 80%;
+    }
+}
+@media screen and (min-width: 992px){       
+    .block-left{
+        width: 30%;
+    }
+    .block-right{
+        width: calc(70% - 60px);
+    } 
+    .cv-codeblock {
+        font-size: 100%;
+    }
+    .cv-table-row{
+        display: flex;
+    }
+    .cv-table-td:nth-child(1){
+        width: 30%;
+        max-width: 150px;
+    } 
+    .cv-table-td:nth-child(2){
+        width: 70%;
+    } 
+}
+
+
+.cv-contacts a{
+    color: #1a181b;
+    text-decoration: none;
+}
+.cv{
+    background-color: #c3b9b9;
+}
